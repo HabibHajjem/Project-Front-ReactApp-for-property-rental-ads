@@ -13,7 +13,7 @@ export const signUp = (newUser,navigate) => async(dispatch)=>{
 
 export const signIn = (userInfo,navigate) => async(dispatch) => {
     try {
-        const res = await axios.post('/signIn',userInfo)
+        const res = await axios.post('https://gmcmyprojectmern.herokuapp.com/api/signIn',userInfo)
         dispatch({type : "SIGN_IN", payload : res.data})
         navigate('/')
     } catch (error) {
