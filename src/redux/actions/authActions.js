@@ -29,7 +29,7 @@ export const current = () => async(dispatch) =>{
         }
     }
     try {
-        const res = await axios.get('/current', config)
+        const res = await axios.get('https://gmcmyprojectmern.herokuapp.com/api/current', config)
         dispatch({type : "CURRENT", payload:res.data})
         dispatch({type:"TOGGLE_LOADING_FALSE"})
     } catch (error) {
