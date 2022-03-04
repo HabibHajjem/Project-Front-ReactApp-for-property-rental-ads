@@ -1,0 +1,13 @@
+.footer{
+margin-top: 200px;
+left:0;
+bottom:0;
+right:0;
+}
+
+.footer .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(248, 246, 246);
+}

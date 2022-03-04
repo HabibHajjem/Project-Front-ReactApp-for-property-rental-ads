@@ -1,0 +1,21 @@
+#listUsersBloc{
+    width:90%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#listUsersBloc h2{
+    border-bottom: 2px solid;
+    width: 50%;
+}
+#listUsersBloc h4:hover {
+    color:rgb(31, 82, 247);
+    text-decoration: underline;
+    
+}
+
+#listUsersBloc h4{
+    border-bottom: 1px grey solid;
+    padding: 10px 0px 10px 20px;
+    width: 50%;
+}

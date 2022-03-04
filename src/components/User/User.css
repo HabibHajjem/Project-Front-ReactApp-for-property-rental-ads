@@ -1,0 +1,15 @@
+#userBloc{
+    width: 70%;
+    height:60px;
+    margin: auto;
+    background-color: rgb(241, 238, 238);
+    border-radius: 10px 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#userBloc button{
+    height: 30px;
+}

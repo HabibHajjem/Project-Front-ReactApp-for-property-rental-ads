@@ -1,0 +1,9 @@
+#mesAnnoncesBloc{
+    width: 65%;
+    margin: auto;
+    margin-top: 50px;
+    margin-left: 280px;
+    display: flex;
+    flex-direction: column;
+    gap:70px;
+}

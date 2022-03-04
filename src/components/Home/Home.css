@@ -1,0 +1,14 @@
+#btn{
+    margin-top: 20px;
+    width: 400px;
+    height: 50px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+}
+#container2{
+    margin-top: 50px;
+    text-align: center;
+}

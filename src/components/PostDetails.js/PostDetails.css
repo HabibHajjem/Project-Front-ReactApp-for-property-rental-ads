@@ -1,0 +1,19 @@
+#postCard:link{
+    text-decoration: none;
+}
+.postDetailBloc{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.commentsBloc{
+    width: 60%;
+    background-color: rgb(241, 239, 239);
+    margin-bottom: 10px;
+    padding-left:30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px 10px;
+    
+}

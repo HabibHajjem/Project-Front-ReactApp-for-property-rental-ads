@@ -1,0 +1,14 @@
+.filter{
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+    background-color: rgb(219, 217, 217);
+    padding-bottom: 20px;
+    border-radius: 15px 15px;
+}
+
+.filterInput{
+    display: flex;
+    padding-Top: 10px;
+    justify-content: space-around;
+}

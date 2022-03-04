@@ -1,0 +1,21 @@
+#userDetailBloc{
+    width: 85%;
+    margin: auto;
+    margin-top: 15px;
+}
+#userDetailBloc h2{
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#userDetailBloc #postsBloc{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display:flex;
+    flex-direction: column;
+    gap: 40px;
+}

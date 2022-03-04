@@ -1,0 +1,12 @@
+export const SIGN_UP = "SIGN_UP";
+export const SIGN_IN = "SIGN_IN";
+export const CURRENT = "CURRENT";
+export const LOG_OUT = "LOG_OUT";
+export const FAIL = "FAIL";
+export const CLEARERRORS = "CLEARERRORS";
+export const GET_USERS = "GET_USERS"
+export const GET_USER = "GET_USER"
+export const CLEAR_USER = "CLEAR_USER"
+export const GET_USERPOSTS = "GET_USERPOSTS"
+export const TOGGLE_LOADING_FALSE = "TOGGLE_LOADING_FALSE"
+export const CLEAR_USERPOSTS = "CLEAR_USERPOSTS"

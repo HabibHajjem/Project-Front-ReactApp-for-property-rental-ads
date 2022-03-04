@@ -1,0 +1,27 @@
+#container{
+    width:55%;
+    margin: auto;
+    margin-top: 40px;
+    background-color:rgb(238, 237, 237) ;
+    font-size: 1.6em;
+    text-align: center;
+}
+#btnBloc{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    margin-top: 20px;
+}
+.button{
+    width: 250px;
+    height: 50px;
+    background-color: rgb(255, 157, 10);
+    color: white;
+    border-radius: 10px;
+    border:none;
+    box-shadow: 0 4px #999;
+}
+.button:active {
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+  }

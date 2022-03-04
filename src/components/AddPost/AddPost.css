@@ -1,0 +1,19 @@
+#addPost{
+    width: 70%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    background-color: rgb(245, 243, 243);
+    border-radius: 20px 20px;
+}
+
+#addPost form{
+    padding-left: 170px;
+}
+
+
+#surfaceInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
