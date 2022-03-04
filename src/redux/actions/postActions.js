@@ -2,7 +2,7 @@ import axios from 'axios'
 
 export const getPosts = () => async (dispatch) => {
     try {
-        const res = await axios.get('/posts')
+        const res = await axios.get('https://gmcmyprojectmern.herokuapp.com/api/posts')
         dispatch({type:"GET_POSTS", payload:res.data.posts})
     } catch (error) {
         console.log(error);
