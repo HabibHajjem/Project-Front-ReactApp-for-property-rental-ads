@@ -27,7 +27,7 @@ function Home() {
                     <img
                     style={{width:'50rem',height:'25rem',borderRadius:'20px 20px'}}
                     className="d-block w-100"
-                    src={`http://localhost:3000/uploads/${post.imagesUrl[0]}`}
+                    src={`https://hungry-nobel-f450ba.netlify.app/uploads/${post.imagesUrl[0]}`}
                     alt="First slide"
                     />
                     </Link>
