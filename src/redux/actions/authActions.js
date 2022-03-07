@@ -70,14 +70,8 @@ export const deleteUser = (id,navigate) => async (dispatch) =>{
 }
 
 export const getUserById = (id) => async(dispatch)=>{
-    const token = localStorage.getItem('token')
-    const config = {
-        headers :{
-            Authorization:token
-        }
-    }
     try {
-        const res = await axios.get(`https://gmcmyprojectmern.herokuapp.com/api/users/${id}`,config)
+        const res = await axios.get(`https://gmcmyprojectmern.herokuapp.com/api/users/${id}`)
         dispatch({type:"GET_USER", payload:res.data.user})
         dispatch({type:"TOGGLE_LOADING"})
         dispatch({type:"TOGGLE_PENDING_FALSE"})
