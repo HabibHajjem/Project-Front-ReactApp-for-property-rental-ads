@@ -38,7 +38,7 @@ return <div className='postDetailBloc'>
         <Carousel.Item >
             <img  style={{width:'100%',height:'30rem'}}
             className="d-block w-100"
-            src={`https://hungry-nobel-f450ba.netlify.app/uploads/${image}`}
+            src={image}
             alt="First slide"
             />
         </Carousel.Item>)}

@@ -22,7 +22,7 @@ function Post({post}) {
           <Carousel.Item >
             <img  style={{width:'100%',height:'20rem'}}
             className="d-block w-100"
-            src={`https://hungry-nobel-f450ba.netlify.app/uploads/${image}`}
+            src={image}
             alt="First slide"
             />
           </Carousel.Item>)}

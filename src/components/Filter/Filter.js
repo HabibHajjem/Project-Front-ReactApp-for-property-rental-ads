@@ -25,33 +25,35 @@ function Filter() {
 return (
     <div className='filter'>
         <div className='filterInput'>
-    <Form.Group  className="mb-3 form" >
-    <Form.Select aria-label="Default select example" 
-        value={code} onChange={(e)=>{handleGovChange(e)}}> 
-        <option value="">Selectionner une gouvernorat</option>
-        {State.getStatesOfCountry('TN').map(state=>
-        <option value={state.isoCode}>{state.name}</option>)}
-    </Form.Select>
-        <Form.Group className="mb-3" style={{textAlign:'left',marginTop:'20px',fontSize:'1.2em'}}>
-        <Form.Check inline name="meuble" type="checkbox" label="maison" value="maison"
-        onChange={(e)=>setMaison(e.target.checked)}/>
-        <Form.Check inline name="meuble" type="checkbox" label="appartement" value="appartement"
-        onChange={(e)=>setAppartement(e.target.checked)} />
-    </Form.Group>
-    </Form.Group>
-
-    <Form.Group className="mb-3 form"  >
-    <Form.Select aria-label="Default select example" 
-    value={city} onChange={(e)=>{setCity(e.target.value);console.log(e.target.value)}}>
-        <option value="">Selectionner une ville</option>
-        {City.getCitiesOfState('TN',code).map(el=>
-        <option value={el.name}>{el.name}</option>)}
-    </Form.Select>
-        <Form.Control type="txt"  placeholder="Votre budget max en DT ? " 
-        style={{width:'320px',marginTop:'10px'}} 
-        onChange={(e)=>{setPrice(0);
-        setPrice(e.target.value)}}/>
-    </Form.Group>  
+            <div className='filterInput-bloc'>
+                <Form.Select aria-label="Default select example"    
+                value={code} onChange={(e)=>{handleGovChange(e)}}> 
+                <option value="">Selectionner une gouvernorat</option>
+                {State.getStatesOfCountry('TN').map(state=>
+                <option value={state.isoCode}>{state.name}</option>)}
+                </Form.Select>
+                <Form.Select aria-label="Default select example" 
+                value={city} 
+                onChange={(e)=>{setCity(e.target.value);console.log(e.target.value)}}>
+                <option value="">Selectionner une ville</option>
+                {City.getCitiesOfState('TN',code).map(el=>
+                <option value={el.name}>{el.name}</option>)}
+                </Form.Select>
+            </div>
+            <div className='filterInput-bloc'>
+                <Form.Group className="mb-3 localType" 
+                style={{textAlign:'left',marginTop:'20px',display:'flex'}}>
+                <Form.Check inline name="meuble" type="checkbox" label="maison" value="maison"
+                onChange={(e)=>setMaison(e.target.checked)}/>
+                <Form.Check inline name="meuble" type="checkbox" label="appartement" value="appartement"
+                onChange={(e)=>setAppartement(e.target.checked)} />
+                </Form.Group>
+                <Form.Control type="txt"  placeholder="Votre budget max en DT ? " 
+                style={{marginTop:'10px',width:'49.4%',height:'40px'}} 
+                size='sm'
+                onChange={(e)=>{setPrice(0);
+                setPrice(e.target.value)}}/>
+            </div> 
     </div>
     <Button variant="primary" type="submit"
     onClick={(e)=>{

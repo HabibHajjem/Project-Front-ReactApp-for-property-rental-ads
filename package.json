@@ -44,7 +44,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://gmcmyprojectmern.herokuapp.com/api",
+  "proxy": "http://localhost:4000/api",
   "devDependencies": {
     "mini-css-extract-plugin": "2.4.5"
   }

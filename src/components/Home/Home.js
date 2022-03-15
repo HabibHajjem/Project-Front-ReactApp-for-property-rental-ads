@@ -18,16 +18,16 @@ function Home() {
     return (
         <div id='container2'>
             
-            <Carousel style={{width:'55%', margin:'auto', marginTop:'30px'}}
+            <Carousel style={{width:'55%', margin:'auto', marginTop:'5px'}}
             fade={true} indicators={false}>
             {posts && posts.map(post=>
                 <Carousel.Item>
                     <Link to={`/postDetails/${post._id}`} 
             onClick={()=>dispatch({type:"TOGGLE_LOADING_TRUE"})} >
                     <img
-                    style={{width:'50rem',height:'25rem',borderRadius:'20px 20px'}}
+                    style={{width:'60%',height:'auto',maxHeight:'30rem',borderRadius:'20px 20px'}}
                     className="d-block w-100"
-                    src={`https://hungry-nobel-f450ba.netlify.app/uploads/${post.imagesUrl[0]}`}
+                    src={post.imagesUrl[0]}
                     alt="First slide"
                     />
                     </Link>
