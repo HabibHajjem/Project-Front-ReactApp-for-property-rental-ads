@@ -22,7 +22,7 @@ function NavBare() {
     <Navbar.Collapse id="responsive-navbar-nav">
     {user.auth?
       <Nav className="me-auto">
-        <Nav.Link as={Link} to='/' > Home </Nav.Link>
+        <Nav.Link as={Link} to='/' > Accueil </Nav.Link>
         <Nav.Link as={Link} to={user.auth?'/addPost':'/loginRegister'} > Ajouter une annonce </Nav.Link>
         <Nav.Link as={Link} to='/profil' > Profil </Nav.Link>
         {user.user.role==="admin"?
@@ -30,7 +30,7 @@ function NavBare() {
         <Nav.Link as={Link} to='/mesAnnonces' > Mes annonces </Nav.Link>}
       </Nav>:
       <Nav className="me-auto">
-        <Nav.Link as={Link} to='/' > Home </Nav.Link>
+        <Nav.Link as={Link} to='/' > Accueil </Nav.Link>
         <Nav.Link as={Link} to={user.auth?'/addPost':'/loginRegister'} > Ajouter une annonce </Nav.Link>
       </Nav>
       }

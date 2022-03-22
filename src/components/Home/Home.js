@@ -8,7 +8,6 @@ import ListPosts from '../ListPosts/ListPosts'
 import './Home.css'
 
 function Home() {
-    const user = useSelector(state => state.authReducer)
     const posts = useSelector(state=>state.postReducer.posts)
     const dispatch = useDispatch()
     useEffect(() => {
