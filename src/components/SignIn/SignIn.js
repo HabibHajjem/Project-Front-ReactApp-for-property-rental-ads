@@ -26,12 +26,12 @@ function SignIn() {
         <div id="container">
             <Form>
   <Form.Group className="mb-3" >
-    <Form.Label>Email address</Form.Label>
+    <Form.Label>Adresse e-mail</Form.Label>
     <Form.Control type="email" value={email} onChange={(e)=>setEmail(e.target.value)} placeholder="Enter email" />
   </Form.Group>
 
   <Form.Group className="mb-3" >
-    <Form.Label>Password</Form.Label>
+    <Form.Label>Mot de passe</Form.Label>
     <Form.Control type="password" value={password} onChange={(e)=>setPassword(e.target.value)}  placeholder="Password" />
   </Form.Group>
   <Button variant="primary" onClick={(e)=>{e.preventDefault();dispatch(signIn({email,password},navigate))}} type="submit">
