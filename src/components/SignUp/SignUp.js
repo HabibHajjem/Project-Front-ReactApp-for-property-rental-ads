@@ -28,27 +28,27 @@ function SignUp() {
         <div id="container">
             <Form>
   <Form.Group className="mb-3" >
-    <Form.Label>First name</Form.Label>
+    <Form.Label>Prénom</Form.Label>
     <Form.Control type="text" value={firstName} onChange={(e)=>setFirstName(e.target.value)} placeholder="Enter first name" />
   </Form.Group>
 
   <Form.Group className="mb-3" >
-    <Form.Label>Last name</Form.Label>
+    <Form.Label>Nom</Form.Label>
     <Form.Control type="text" value={lastName} onChange={(e)=>setLastName(e.target.value)} placeholder="Enter last name" />
   </Form.Group>
 
   <Form.Group className="mb-3" >
-    <Form.Label>Email address</Form.Label>
+    <Form.Label>Adresse e-mail</Form.Label>
     <Form.Control type="email" value={email} onChange={(e)=>setEmail(e.target.value)} placeholder="Enter email" />
   </Form.Group>
 
   <Form.Group className="mb-3" >
-    <Form.Label>Numéro de télephone</Form.Label>
+    <Form.Label>Numéro de téléphone</Form.Label>
     <Form.Control type="text" value={contact} onChange={(e)=>setContact(e.target.value)} placeholder="Enter num de tel" />
   </Form.Group>
 
   <Form.Group className="mb-3" >
-    <Form.Label>Password</Form.Label>
+    <Form.Label>Mot de passe</Form.Label>
     <Form.Control type="password" value={password} onChange={(e)=>setPassword(e.target.value)} placeholder="Password" />
   </Form.Group>
   <Button variant="primary" type="submit" onClick={(e)=>{e.preventDefault();dispatch(signUp({firstName,lastName,email,contact,password},navigate))}} >
